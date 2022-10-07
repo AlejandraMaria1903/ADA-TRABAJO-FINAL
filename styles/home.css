@@ -1,0 +1,172 @@
+main {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+main section.contain-cards {
+    display: flex;
+    flex-direction: column;    
+    margin-top: 15px;    
+}
+
+main section.contain-cards .box { 
+    box-shadow: 10px 10px 5px 0px rgba(172, 172, 172, 0.75);
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px  solid rgb(196, 196, 196);
+    overflow: hidden;
+}
+
+main section.contain-cards .box:hover {
+    box-shadow: 18px 22px 21px 0px rgba(0, 0, 0, 0.66);
+    cursor: pointer;
+}
+
+main .contain-cards .box img {
+    width: 100%;
+}
+
+main .contain-cards .box img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    filter: grayscale(90%);
+}
+
+main section.contain-cards .box .character {
+    width: 100%;
+    padding: 20px;    
+    margin-top: -5px;
+}
+
+main section.contain-cards .box .ver {
+    height: 3rem; 
+    border: 1px solid rgb(218, 218, 218); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;           
+}
+
+main section.contain-cards .box .ver a {
+    height: 100%;
+    text-decoration: none;
+    color: blue; 
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+main .contain-paginador {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem; 
+}
+
+main .contain-paginador .pag {
+    margin-top: 30px;
+    margin-left: -18px;
+}
+
+main .contain-pages {
+    width: 40px;
+    height: 40px;
+    margin: 40px;
+    display: flex;
+    font-size: 25px;    
+}
+
+main .contain-pages:hover {
+    cursor: pointer;
+}
+
+main .contain-pages button {
+    position: relative;
+    left: 80%;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 4px 8px;
+         
+}
+
+.desactived {
+    color: rgba(128, 128, 128, 0.488);
+    border: none;
+}
+
+main .contain-pages button:hover {
+    cursor: pointer;
+}
+
+.desactived:hover {
+    cursor: auto;
+}
+
+@media (min-width: 768px) {
+
+    main section.contain-cards { 
+        flex-direction: row;    
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main .contain-paginador {
+        padding: 2rem 20rem;
+    }
+
+    main .contain-pages {
+        margin-left: 17rem;
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    main .contain-cards .box {
+        width: 23%;
+    }
+
+    main .contain-cards .box img {
+        width: 100%;
+        height: 50%;
+    }
+    
+    main section.contain-cards .box .character {
+        height: 50%;
+    }
+    
+    main .contain-paginador {
+        padding: 3rem 28rem ;
+    }
+
+    main .contain-pages {
+        margin-left: 24rem;
+    }
+}
+
+@media (min-width: 1366px) {
+
+    main .contain-paginador {
+       padding: 10rem 38rem;
+    }
+
+    main .contain-pages {
+        margin-left: 34.5rem;
+        margin-top: -2%;
+    }
+}
+@media (min-width: 1440px) {
+
+    main .contain-paginador {
+        padding: 8rem 40rem;
+    }
+
+    main .contain-pages {
+        margin-left: 36rem;
+    }
+}

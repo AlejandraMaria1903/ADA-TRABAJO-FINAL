@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Rick and Morty</title>
+</head>
+<body>
+    <header>
+        <div class="contain-init">
+            <a href="./index.html" class="title">Rick And Morty</a>
+            <ul class="list-init">
+                <li id="filter-todos">Todos</li>
+                <li id="filter-female">Female</li>
+                <li id="filter-male">Male</li>
+                <li id="filter-genderless">Genderless</li>
+                <li id="filter-unknown">unknown</li>
+            </ul>
+        </div>        
+    </header>
+    <main>
+        <div class="total">
+            <p>Total de personajes: <spain id="total-personajes">20</spain>
+            </p>
+        </div>
+        <section class="contain-cards">
+            <!--<div class="box">                    
+                <img src={item.image} alt={item.name} />
+                <div class="character">
+                    <p>Nombre: {item.name}</p>
+                    <p>Geneo: {item.gender}</p>
+                    <p>Species: {item.species}</p>
+                    <p>Status: {item.status}</p>
+                    <p>Origin: {item.origin.name}</p>
+                    <p>Location: {item.location.name}</p>                     
+                </div>
+                <div class="ver">
+                    <a href="#">Ver mas...</a>
+                </div>  
+            </div>-->
+        </section>
+        <section>
+            <div class="contain-paginador">
+                <p class="pagina-actual">Pagina actual: <span id="pagina-actual">1</span></p>
+                <p class="pag">Total de paginas: <span id="total-paginas">42</span></p>
+            </div>
+            <div class="contain-pages">
+                <button id="init-page"><<</button>
+                <button id="previous-page"><</button>
+                <button id="next-page">></button>
+                <button id="last-page">>></button>                         
+            </div>
+        </section>   
+    </main>
+    <footer>
+        <h3>Footer</h3>
+        <div class="contain-footer">
+            <p>© 2022 Copyright Alejandra Tettamanti 😎</p>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
